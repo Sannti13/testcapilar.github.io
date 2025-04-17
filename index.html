@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Test Capilar - Brillo Perfecto</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Lado izquierdo con imagen -->
+    <div class="left-image">
+      <img src="img/modelo.jpg" alt="Modelo con cabello" />
+    </div>
+
+    <!-- Lado derecho con preguntas -->
+    <div class="right-quiz">
+      <div class="quiz-header">
+        <h2>Test Capilar Inteligente</h2>
+        <p>Responde estas preguntas para obtener tu rutina personalizada.</p>
+      </div>
+
+      <form id="quizForm">
+
+        <!-- Paso 1 -->
+        <div class="quiz-step active">
+          <div class="question">
+            <label>¿Cómo describirías tu tipo de cabello natural?</label>
+            <div class="opciones-cabello">
+              <label>
+                <input type="radio" name="tipoCabello" value="liso" required />
+                <img src="img/liso.png" alt="Cabello liso" />
+                <span>Liso</span>
+              </label>
+              <label>
+                <input type="radio" name="tipoCabello" value="ondulado" />
+                <img src="img/ondulado.png" alt="Cabello ondulado" />
+                <span>Ondulado</span>
+              </label>
+              <label>
+                <input type="radio" name="tipoCabello" value="rizado" />
+                <img src="img/rizado.png" alt="Cabello rizado" />
+                <span>Rizado</span>
+              </label>
+              <label>
+                <input type="radio" name="tipoCabello" value="crespo" />
+                <img src="img/crespo.png" alt="Cabello crespo" />
+                <span>Crespo o afro</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- Paso 2 -->
+        <div class="quiz-step">
+          <div class="question">
+            <label>¿Cuál es el grosor de tu cabello?</label>
+            <div class="opciones-grosor">
+              <label>
+                <input type="radio" name="grosorCabello" value="fino" required />
+                <img src="img/fino.png" alt="Cabello fino" />
+                <span>Fino</span>
+              </label>
+              <label>
+                <input type="radio" name="grosorCabello" value="medio" />
+                <img src="img/medio.png" alt="Cabello medio" />
+                <span>Medio</span>
+              </label>
+              <label>
+                <input type="radio" name="grosorCabello" value="grueso" />
+                <img src="img/grueso.png" alt="Cabello grueso" />
+                <span>Grueso</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- Paso 3 -->
+        <div class="quiz-step">
+          <div class="question">
+            <label>¿Sientes tu cabello seco o deshidratado?</label>
+            <select name="cabelloSeco" required>
+              <option value="">Selecciona una opción</option>
+              <option value="si">Sí</option>
+              <option value="aVeces">A veces</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Paso 4 -->
+        <div class="quiz-step">
+          <div class="question">
+            <label>¿Tienes puntas abiertas o el cabello quebradizo?</label>
+            <select name="puntas" required>
+              <option value="">Selecciona una opción</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+              <option value="noEstoySegura">No estoy segura</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Paso 5 -->
+        <div class="quiz-step">
+          <div class="question">
+            <label>¿Tu cuero cabelludo produce exceso de grasa?</label>
+            <select name="grasa" required>
+              <option value="">Selecciona una opción</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+              <option value="noSe">No sé</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Paso 6 -->
+        <div class="quiz-step">
+          <div class="question">
+            <label>¿Tu cabello ha sido sometido a alguno de estos procesos?</label>
+            <div class="checkboxes-grid">
+              <label><input type="checkbox" name="procesos" value="tintura"> Tintura o decoloración</label>
+              <label><input type="checkbox" name="procesos" value="alisado"> Alisado, keratina o permanente</label>
+              <label><input type="checkbox" name="procesos" value="calor"> Uso frecuente de plancha o secador</label>
+              <label><input type="checkbox" name="procesos" value="ninguno"> Ninguno</label>
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- Paso 7 -->
+        <div class="quiz-step">
+          <div class="question">
+            <label>¿Tu cabello presenta frizz difícil de controlar?</label>
+            <select name="frizz" required>
+              <option value="">Selecciona una opción</option>
+              <option value="si">Sí</option>
+              <option value="aVeces">Sólo en ambientes húmedos</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Paso 8 -->
+        <div class="quiz-step">
+          <div class="question">
+            <label>¿Cómo se siente tu cabello al tacto?</label>
+            <select name="tacto" required>
+              <option value="">Selecciona una opción</option>
+              <option value="aspero">Áspero o enredado</option>
+              <option value="suave">Suave y manejable</option>
+              <option value="mixto">Mixto: raíces grasas, puntas secas</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Paso 9 -->
+        <div class="quiz-step">
+          <div class="question">
+            <label>¿Qué te gustaría mejorar o lograr con tu tratamiento?</label>
+            <select name="objetivo" required>
+              <option value="">Selecciona una opción</option>
+              <option value="hidratacion">Hidratación intensa</option>
+              <option value="reparacion">Reparación profunda</option>
+              <option value="frizz">Control de frizz</option>
+              <option value="brillo">Brillo y suavidad</option>
+              <option value="rizos">Nutrición para rizos definidos</option>
+              <option value="equilibrio">Equilibrar raíces grasas y puntas secas</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Paso 10 -->
+        <div class="quiz-step">
+          <div class="question">
+            <label>¿Con qué frecuencia te aplicas tratamientos capilares?</label>
+            <select name="frecuencia" required>
+              <option value="">Selecciona una opción</option>
+              <option value="semanal">Semanalmente</option>
+              <option value="quincenal">Quincenalmente</option>
+              <option value="pocasVeces">Muy pocas veces</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Navegación -->
+        <div class="navigation">
+          <button type="button" id="prevBtn">Anterior</button>
+          <button type="button" id="nextBtn">Siguiente</button>
+          <button type="submit" id="submitBtn" style="display:none;">Ver rutina</button>
+        </div>
+      </form>
+
+      <div id="resultado" class="resultado"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+<button id="darkModeToggle" class="modo-btn">🌙 Modo oscuro</button>
+
+</html>
